@@ -12,9 +12,55 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
-	</head>
+	<style>
+    body
+    {
+      background:rgb(128,0,128);
+      display: -webkit-flex; 
+      /* if the corner of the browser is Webkit such as safari */
+      display: flex;
+      
+    }
+    .container 
+    {
+    width: 80%;
+    height: 100%;
+    margin:0px auto;
+/*     flex-wrap: wrap; */
+    }
+    .container .wrap
+    {
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+    width:50%;
+    height:100%;
+    justify-content: space-between;
+    
+    }
+    .container .wrap div 
+    {
+    width:150px;
+    height:150px;
+    background-color: #c75a5a;
+    margin:10px;
+    } 
+    
+  </style>
+  </head>
 	<body>
 		<!-- Your layout here -->
-
+<div class="container">
+        <div class="wrap">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="wrap1">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 	</body>
 </html>

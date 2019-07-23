@@ -9,12 +9,71 @@
 		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="{% static '/vendors/bootstrap/css/bootstrap.css' %}" />
 		<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}" />
-
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+      <style>
+    body
+    {
+      background:rgb(128,0,128);
+      display: -webkit-flex; 
+      /* if the corner of the browser is Webkit such as safari */
+      display: flex;
+      
+    }
+    .container 
+    {
+    width: 70%;
+    height: 100%;
+    margin:0px auto;
+    }
+    .container .wrap
+    {
+    display: flex;
+    flex-direction: row;
+    margin:10px;
+    width:100%;
+    height:50%;
+    justify-content: space-between;
+    }
+    .container .wrap1 
+    {
+    display: flex;
+    flex-direction: row;
+    margin:10px;
+    width:100%;
+    height:50%;
+    justify-content: center;
+    }
+    .container .wrap div 
+    {
+    width:150px;
+    height:150px;
+    background-color: #c75a5a;
+    margin:10px;
+    flex-wrap: wrap;
+    }
+    .container .wrap1 div 
+    {
+    width:150px;
+    height:150px;
+    background-color: #c75a5a;
+    margin:10px;
+    }
+  </style>
 	</head>
 	<body>
 		<!-- Your layout here -->
-
+      <div class="container">
+        <div class="wrap">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+      <div class="wrap1">
+            <div></div>
+      </div>
+    </div>
 	</body>
 </html>
